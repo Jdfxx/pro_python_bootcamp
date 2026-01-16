@@ -7,6 +7,6 @@ tip_percentage = tip / 100
 bill_and_tip = bill + bill * tip_percentage
 total_per_person =  round(bill_and_tip / people, 2)
 
-print(f"${total_per_person}")
+print(f"Each person should pay: ${total_per_person}")
 
 
