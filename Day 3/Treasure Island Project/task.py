@@ -22,3 +22,24 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 ''')
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
+
+direction = input("You're at a crossroad, where do you want to go? L or R")
+
+if direction.capitalize() !="L":
+    print("You fell into a hole. Game Over")
+else:
+    print("You've come to river but it looks dangerous, would you like to swim or wait? S or W")
+    swim = input()
+    if swim.capitalize() !="W":
+        print("You got attacked by a trout. Game Over")
+    else:
+        print("You arrived at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which colour do you choose?")
+        doors = input("You stand in front of big doors. One if Red, other Blue and last one is Yellow. Which doors do you choose? R B Y")
+        if doors.capitalize() =="R":
+            print("You're burned by fire. Gave over")
+        elif doors.capitalize() =="B":
+            print("You're eaten by beats. Gave over")
+        elif doors.capitalize() =="Y":
+            print("You found the treasure. You Win!")
+        else:
+            print("Game over")
